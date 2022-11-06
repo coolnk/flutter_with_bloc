@@ -7,7 +7,7 @@ abstract class PizzaEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class LoadPizzaCounter extends PizzaEvent {}
+class LoadPizzaCounterEvent extends PizzaEvent {}
 
 class AddPizza extends PizzaEvent {
   final Pizza pizza;

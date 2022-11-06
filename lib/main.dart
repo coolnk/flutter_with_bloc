@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => PizzaBloc()..add(LoadPizzaCounter()),
+          create: (context) => PizzaBloc()..add(LoadPizzaCounterEvent()),
         )
       ],
       child: const MaterialApp(
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.orange,
               );
             }
-            if (state is PizzaLoaded) {
+            if (state is PizzaLoadedState) {
               return Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
