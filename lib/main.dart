@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(child: BlocBuilder<PizzaBloc, PizzaState>(
           builder: (context, state) {
-            if (state is PizzaInitial) {
+            if (state is PizzaInitialState) {
               return const CircularProgressIndicator(
                 color: Colors.orange,
               );

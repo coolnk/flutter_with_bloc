@@ -6,7 +6,7 @@ part 'pizza_event.dart';
 part 'pizza_state.dart';
 
 class PizzaBloc extends Bloc<PizzaEvent, PizzaState> {
-  PizzaBloc() : super(PizzaInitial()) {
+  PizzaBloc() : super(PizzaInitialState()) {
     //First event
     on<LoadPizzaCounterEvent>((event, emit) async {
       await Future<void>.delayed(const Duration(seconds: 1));

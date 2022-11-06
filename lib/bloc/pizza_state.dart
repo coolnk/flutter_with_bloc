@@ -7,7 +7,7 @@ abstract class PizzaState extends Equatable {
   List<Object> get props => [];
 }
 
-class PizzaInitial extends PizzaState {}
+class PizzaInitialState extends PizzaState {}
 
 class PizzaLoadedState extends PizzaState {
   //The state will have access to the list of pizzas
